@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/CH.css"></link>
+</head>
+<body>
+    <nav>
+        <h1>Lobby</h1>
+        <header>
+            <ul>
+                <li><a href="./Reala.html">Áreas Tecnológicas</a></li>
+                <li><a target="_blank" href="./Linkedin.html">Linkedin</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </header>
+    </nav>
+    <div id="banner">
+        <h2 id="tit" style="font-weight: 500;; color:white">Seja bem-vindo!</h2>
+        <span id="bem-vindo" style = "color:white">Clique em um dos botões abaixo para ver meus projetos em tais matérias!</span>
+    
+    </div>
+    <div id="all">
+    <div id="CN">
+        <h2>Ciências da Natureza</h2>
+        <p>Ciências da Natureza incluem Física, Química e Biologia. Estas disciplinas investigam os princípios fundamentais que governam o universo, desde as partículas subatômicas até os ecossistemas. Os estudantes exploram as leis da física, as reações químicas e a complexidade da vida, desenvolvendo uma compreensão crítica do mundo natural.</p>
+         <a target="_blank" href="cienciasnatureza.html"><button class="btn">Atividade</button></a>
+        </div>
+    <div id="CH" >
+        <h2>Ciências Humanas</h2>
+        <p>Ciências Humanas englobam disciplinas como História, Geografia, Filosofia e Sociologia. Essas disciplinas exploram a evolução da sociedade, a diversidade cultural, questões éticas e filosóficas, proporcionando uma compreensão mais profunda das interações humanas e do contexto em que vivemos.</p>
+         <a target="_blank" href="humanas.html" ><button class="btn">Atividade</button></a>     
+    </div>
+    <div id="lin">
+        <h2>Linguagens</h2>
+        <p>A disciplina de Linguagens abrange o estudo da língua materna, literatura e língua estrangeira. Os alunos desenvolvem habilidades de comunicação, análise literária, interpretação de textos e expressão escrita. A compreensão profunda da linguagem é essencial para a participação ativa na sociedade e para o desenvolvimento pessoal.</p>
+           <a target="_blank" href="linguagens.html" ><button class="btn">Atividade</button> </a>
+    </div>
+    
+    <div id="TI" class="vazio">
+        <h2>T.I</h2>
+        <p>A disciplina de TI explora os fundamentos da computação, programação, redes e sistemas de informação. Os estudantes aprendem a criar, analisar e solucionar problemas utilizando a tecnologia, preparando-se para enfrentar os desafios e oportunidades do mundo digital em constante evolução.</p>
+           <a target="_blank" href="ti.html"><button class="btn"> Atividade</button> </a>
+    </div>
+    <div id="mat" class="vazio">
+        <h2>Matemática</h2>
+        <p>A matemática no ensino médio abrange conceitos como álgebra, geometria, trigonometria e análise. Os estudantes desenvolvem habilidades de resolução de problemas, raciocínio lógico e compreensão de relações matemáticas, preparando-se para aplicar esses conhecimentos em diversas áreas da vida e em disciplinas mais avançadas.</p>
+           <a target="_blank" href="matematica.html" ><button class="btn">Atividade</button> </a>
+    </div>
+    <div id="Pr" class="vazio">
+        <h2>Projeto do ano</h2>
+        <p>O projeto de ano é uma disciplina que visa integrar conhecimentos adquiridos ao longo do ensino médio. Os alunos desenvolvem projetos multidisciplinares, aplicando conceitos de diferentes áreas para resolver problemas do mundo real. Isso promove a criatividade, colaboração e aplicação prática do aprendizado, preparando os estudantes para desafios futuros.</p>
+           <a target="_blank" href="projeto.html" ><button class="btn">Atividade</button></a> 
+    </div>
+    <button id="see" style="margin-top: 30px ;margin-bottom: 50px;" >Veja tudo</button>
+    </div> 
+        
+    </div>
+ 
+    </div>
+    <footer>
+        
+        <span><button onclick="topFunction()" id="myBtn" title="Voltar ao topo">Back to top</button>
+        </span>
+    </footer>
+    <script>
+        var botao = document.getElementById("see");
+        var classes = document.getElementsByClassName("vazio");
+
+        botao.addEventListener("click", function(){
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i].style.display === "none" || classes[i].style.display === "") {
+                    classes[i].style.display = "inline-block";
+                    botao.style.display = "none";
+                    
+                } 
+                
+            }
+        })
+
+// Quando o usuário rolar a página, mostre o botão
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Quando o usuário clicar no botão, role suavemente até o topo da página
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+        
+    </script>
+</body>
+</html>
